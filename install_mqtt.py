@@ -6,6 +6,8 @@ def install_docker():
     time.sleep(2)
     subprocess.run(['sudo', 'apt-get', 'update'], check=True)
     subprocess.run(['sudo', 'apt-get', 'install', '-y', 'docker.io'], check=True)
+    print("Done!")
+    time.sleep(2)    
     print("Installing Docker-Compose...")
     time.sleep(2)
     subprocess.run(['sudo', 'apt-get', 'install', '-y', 'docker.io'], check=True)
